@@ -30,9 +30,12 @@ pipeline{
                   failure{
                         echo "i will run if you fail"
                   }
+                  changed{
+                        echo "i will changed three to fourth build"
+                  }
             }
-      changed{
-            echo "i will changed three to fourth build"
-      }
 
 }
+      
+
+
