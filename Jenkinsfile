@@ -16,7 +16,11 @@ pipeline{
                         echo "Deploying an application"
                   }
             }
-            post{
+            
+
+      }
+
+      post{
                   always{
                         echo "i will run always"
                   }
@@ -27,6 +31,5 @@ pipeline{
                         echo "i will run if you fail"
                   }
             }
-
-      }
+            
 }
