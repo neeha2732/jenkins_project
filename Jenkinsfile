@@ -16,6 +16,17 @@ pipeline{
                         echo "Deploying an application"
                   }
             }
+            post{
+                  always{
+                        echo "i will run always"
+                  }
+                  success{
+                        echo "i will run if you are successful"
+                  }
+                  failure{
+                        echo "i will run if you fail"
+                  }
+            }
 
       }
 }
