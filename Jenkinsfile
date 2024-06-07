@@ -20,6 +20,11 @@ pipeline {
                
             }
         }
+        stage('produce'){
+            steps {
+                echo 'production'
+            }
+        }
     }
 }
 
